@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oblig 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="temp1.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<header>
+        <input type="file" id="file"><br>
+</header>
+
+<div class="selector">
+    <input type="text" id="search" placeholder="Search">
+
+    <form id="radForm" action="">
+            <input type="radio" name="gender" id="radLoc" value="loc"> Location<br>
+            <input type="radio" name="gender" id="radTyp"  value="typ"> Type
+    </form>
+
+    <select id="locSelect"></select>
+    
+</div>
+
+<div class="tab1">
+        <table id="data" align="center"></table><br>
+</div>
+
+<div class="tab2">
+        <table id="calcTab" align="center"></table><br><br>
+</div>
+
+<div class="canvas">
+    <canvas id="canvasChart" style="height: 370px; width: 400px;"></canvas>
+    <canvas id="canvasExample" style="height: 370px; width: 400px;"></canvas>
+</div>
+
+<footer>
+        <a href="map.png" target="_blank">Task 2</a>
+</footer>
+    
+    
+
+</body>
+</html>

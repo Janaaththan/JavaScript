@@ -1,0 +1,80 @@
+/* body {
+    background-image: url(nat.jpg);   
+    height: 100%;
+    margin: 0;    
+} */
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+        "head   head    head"
+        "select select  select"
+        "tab1   tab2    canvas"
+        "footer footer  footer";
+}
+
+header {
+    grid-area: head;
+    background: lightgray;
+}
+
+.selector {
+    grid-area: select;
+}
+
+.tab1 {
+    grid-area: tab1;
+    padding: 10px;
+}
+
+.tab2 {
+    grid-area: tab2;
+    padding: 10px;
+}
+
+.canvas {
+    grid-area: canvas;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background: lightgray;
+    padding: 50px;
+}
+
+table, td, th{
+    border: 2px solid black;
+}
+
+input{
+    margin: 0;
+}
+
+table {
+    background: white;
+}
+
+.top {
+    background: deepskyblue;
+}
+
+#file {
+    padding: 20px;
+    margin: 40px;
+    border: 2px solid black;
+}
+
+a {
+    padding: 10px;
+    color: black;
+    border: 3px solid black;
+    text-decoration: none;
+}
+
+a:hover  {
+    background: deepskyblue;
+    text-decoration: underline;
+}
